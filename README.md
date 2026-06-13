@@ -49,20 +49,88 @@ Beer-Calculator/
 └── README.md            # Diese Datei
 ```
 
-### Assets (erforderlich)
+## 🖼️ Assets einrichten (WICHTIG!)
 
-Das Programm benötigt folgende Verzeichnisstruktur für Bilder:
+Das Programm benötigt **PNG-Bilder** in dieser Verzeichnisstruktur. Erstelle folgende Ordner und füge deine Bilder ein:
 
 ```
 assets/
-├── ui/                  # UI-Buttons und Hintergrund
-├── bier/               # Bierflaschen-Bilder
-├── malz/               # Malz-Ikonen
-├── hopfen/             # Hopfen-Ikonen
-├── hefe/               # Hefe-Ikonen
-├── eigenschaften/      # Eigenschafts-Ikonen
-└── aroma/              # Aroma-Ikonen
+├── ui/                      # UI-Elemente & Hintergrund
+│   ├── Home.png
+│   ├── Zurueck.png
+│   ├── Auge.png
+│   ├── Exit.png
+│   ├── reload.png
+│   ├── Aroma.png
+│   ├── Balken.png
+│   ├── Hoch.png
+│   ├── Plus.png
+│   └── hintergrund.png
+│
+├── bier/                    # Bierflaschen (6 Sorten)
+│   ├── Ale.png
+│   ├── Hellas.png
+│   ├── Ipa.png
+│   ├── Sunvale.png
+│   ├── Frosthaven.png
+│   └── Gravenford.png
+│
+├── malz/                    # Malz-Ikonen (10 Sorten)
+│   ├── BB.png
+│   ├── CA.png
+│   ├── CP.png
+│   ├── CO.png
+│   ├── DR.png
+│   ├── HG.png
+│   ├── SW.png
+│   ├── GG.png
+│   ├── BM.png
+│   └── FW.png
+│
+├── hopfen/                  # Hopfen-Ikonen (9 Sorten)
+│   ├── CD.png
+│   ├── CV.png
+│   ├── TF.png
+│   ├── FF.png
+│   ├── FW.png
+│   ├── HB.png
+│   ├── SH.png
+│   ├── GH.png
+│   └── LC.png
+│
+├── hefe/                    # Hefe-Ikonen (9 Sorten)
+│   ├── BV.png
+│   ├── FM.png
+│   ├── CL.png
+│   ├── RC.png
+│   ├── WH.png
+│   ├── YW.png
+│   ├── HY.png
+│   ├── WY.png
+│   └── OY.png
+│
+├── eigenschaften/           # Eigenschafts-Ikonen (5 Sorten)
+│   ├── Erfrischung.png
+│   ├── Schwere.png
+│   ├── Leichtigkeit.png
+│   ├── Saeure.png
+│   └── Suesse.png
+│
+└── aroma/                   # Aroma-Ikonen (4 Sorten)
+    ├── Banana.png
+    ├── Cherry.png
+    ├── Chilli.png
+    └── Wassermelone.png
 ```
+
+### Quick Setup
+
+1. Klone das Repository
+2. Erstelle die `assets/` Verzeichnisstruktur wie oben
+3. Füge deine PNG-Bilder in die entsprechenden Ordner ein
+4. Starte das Programm!
+
+**Hinweis:** Das Programm sucht automatisch in diesen Verzeichnissen. Fehlende Bilder werden durch farbige Platzhalter ersetzt, damit das Programm trotzdem läuft.
 
 ## 🔧 Anforderungen
 
@@ -88,6 +156,7 @@ pip install pygame
 - Der Code "FW" existiert sowohl bei Malz als auch bei Hopfen (separate Verwaltung in ZUTATEN)
 - Der alte Tippfehler "FM" bei Malz wird automatisch in "FW" korrigiert
 - Fehlende Zutaten in der ZUTATEN-Datenbank nutzen Standard-Eigenschaftswerte
+- Fehlende Bilder werden durch Platzhalter ersetzt (das Programm läuft dennoch)
 
 ## 📝 Lizenz
 
