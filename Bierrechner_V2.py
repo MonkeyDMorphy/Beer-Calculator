@@ -709,7 +709,7 @@ def handle_mouse_click(event):
     if back_btn.is_clicked(event):
         if screen_history:
             current_screen = screen_history.pop()
-            print("BACK →", current_screen)
+            print("BACK", current_screen)
         return
 
     if eye_btn.is_clicked(event):
