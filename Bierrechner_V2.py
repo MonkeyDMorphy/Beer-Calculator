@@ -302,7 +302,7 @@ class Background:
         self.original = None
         self.image = None
         try:
-            self.original = pygame.image.load("assets/ui/hintergrund.png").convert()
+            self.original = pygame.image.load("assets/ui/Hintergrund.png").convert()
             self.rebuild()
         except Exception:
             print("FEHLER: Hintergrundbild nicht gefunden!")
